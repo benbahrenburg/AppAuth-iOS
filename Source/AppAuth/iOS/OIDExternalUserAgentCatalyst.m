@@ -89,6 +89,7 @@ NS_ASSUME_NONNULL_BEGIN
   }];
       
   authenticationVC.presentationContextProvider = self;
+  authenticationVC.prefersEphemeralWebBrowserSession = YES;
   _webAuthenticationVC = authenticationVC;
   openedUserAgent = [authenticationVC start];
 
